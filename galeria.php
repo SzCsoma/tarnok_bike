@@ -5,6 +5,7 @@
 <title>Galéria — Best Bike Tours Tárnok</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800&display=swap" rel="stylesheet">
 <link href="assets/css/style.css" rel="stylesheet">
 <link rel="icon" type="image/png" sizes="16x16" href="./assets/imgs/tarnok_ico.ico">
 <style>
@@ -22,65 +23,21 @@
 <body>
 
 <nav class="navbar navbar-expand-lg fixed-top">
-<div class="container">
+  <div class="container">
+    <a class="navbar-brand" href="index.html#">BRINGOSZ</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-<a class="navbar-brand" href="index.html">Best Bike Tours</a>
-
-<button class="navbar-toggler" type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#nav">
-  <span class="navbar-toggler-icon"></span>
-</button>
-
-<div class="collapse navbar-collapse" id="nav">
-<ul class="navbar-nav ms-auto">
-
-<!-- ALMENÜ -->
-<li class="nav-item dropdown">
-  <a class="nav-link dropdown-toggle"
-     href="#"
-     id="bikeMenu"
-     role="button"
-     data-bs-toggle="dropdown"
-     data-bs-auto-close="outside"
-     aria-expanded="false">
-     Kerékpárok
-  </a>
-
-  <ul class="dropdown-menu dropdown-menu-end shadow border-0">
-    <li>
-      <a class="dropdown-item" href="https://www.neuzer.hu" target="_blank">
-        Neuzer
-      </a>
-    </li>
-    <li>
-      <a class="dropdown-item" href="https://www.crosscycle.hu" target="_blank">
-        Crosscycle
-      </a>
-    </li>
-    <li>
-      <a class="dropdown-item" href="https://www.schwinncsepel.hu" target="_blank">
-        Csepel
-      </a>
-    </li>
-  </ul>
-</li>
-
-<li class="nav-item">
-  <a class="nav-link" href="araink.html">Áraink</a>
-</li>
-
-<li class="nav-item">
-  <a class="nav-link" href="galeria.php">Galéria</a>
-</li>
-
-<li class="nav-item">
-  <a class="nav-link" href="kapcsolat.html">Kapcsolat</a>
-</li>
-
-</ul>
-</div>
-</div>
+    <div class="collapse navbar-collapse justify-content-end" id="nav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html#berles">Bérlés</a></li>
+        <li class="nav-item"><a class="nav-link" href="araink.html">Szerviz</a></li>
+        <li class="nav-item"><a class="nav-link" href="galeria.php">Galéria</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#kapcsolat">Kapcsolat</a></li>
+      </ul>
+    </div>
+  </div>
 </nav>
 <main>
 <section class="py-5" style="margin-top:120px;">
@@ -112,6 +69,6 @@ function showImg(src) {
 }
 </script>
 </main>
-<footer>© 2025 Best Bike Tours</footer>
+<footer>© 2026 BRINGOSZ Kerékpárműhely</footer>
 </body>
 </html>
