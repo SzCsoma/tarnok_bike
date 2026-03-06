@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BRINGOSZ Büfé</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+.menu-section{
+margin-bottom:60px;
+}
+
+.menu-title{
+font-weight:800;
+color:var(--primary-color);
+border-bottom:3px solid var(--primary-color);
+padding-bottom:8px;
+margin-bottom:25px;
+}
+
+.menu-item{
+display:flex;
+justify-content:space-between;
+align-items:flex-start;
+gap:12px;
+padding:10px 0;
+border-bottom:1px dashed #ddd;
+}
+
+.menu-item > span:first-child {
+flex:1;
+min-width:0;
+}
+
+.menu-price{
+font-weight:700;
+color:var(--primary-color);
+white-space:nowrap;
+flex-shrink:0;
+}
+
+.menu-note{
+margin-top:40px;
+font-size:.9rem;
+color:#666;
+text-align:center;
+}
+
+.menu-item-desc{
+font-size:.85rem;
+color:#888;
+margin-top:2px;
+display:block;
+}
+
+@media (max-width: 576px) {
+  .menu-title { font-size: 1.1rem; }
+  h1 { font-size: 1.6rem; }
+  h2 { font-size: 1.3rem; }
+  .menu-item { font-size: .95rem; }
+  .menu-section { margin-bottom: 40px; }
+}
+
+</style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top">
+<div class="container">
+
+<a class="navbar-brand" href="index.html#">BRINGOSZ</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse justify-content-end" id="nav">
+<ul class="navbar-nav">
+
+<li class="nav-item"><a class="nav-link" href="index.html#berles">Bérlés</a></li>
+<li class="nav-item"><a class="nav-link" href="araink.html">Szerviz</a></li>
+<li class="nav-item"><a class="nav-link" href="bufe.html">Büfé</a></li>
+<li class="nav-item"><a class="nav-link" href="galeria.php">Galéria</a></li>
+<li class="nav-item"><a class="nav-link" href="index.html#kapcsolat">Kapcsolat</a></li>
+
+</ul>
+</div>
+
+</div>
+</nav>
+
+<main>
+
+<section class="py-5" style="margin-top:120px">
+
+<div class="container">
+
+<h1 class="text-center mb-5">BRINGOSZ Büfé</h1>
+
+<!-- ÜDÍTŐK -->
+
+<div class="menu-section">
+<h3 class="menu-title">Üdítők</h3>
+
+<div class="menu-item"><span>Cola, Fanta, Sprite, Gyömbér, Tonik</span><span class="menu-price">900 Ft</span></div>
+<div class="menu-item"><span>TopJoy barack, alma</span><span class="menu-price">900 Ft</span></div>
+<div class="menu-item"><span>TopJoy narancs</span><span class="menu-price">1000 Ft</span></div>
+<div class="menu-item"><span>Fuze Tea</span><span class="menu-price">900 Ft</span></div>
+<div class="menu-item"><span>Apenta+</span><span class="menu-price">900 Ft</span></div>
+<div class="menu-item"><span>Apenta+ ISO</span><span class="menu-price">1200 Ft</span></div>
+<div class="menu-item"><span>Powerade</span><span class="menu-price">1200 Ft</span></div>
+<div class="menu-item"><span>Víz (mentes, savas) (0,5l)</span><span class="menu-price">500 Ft</span></div>
+</div>
+
+
+<!-- TEÁK -->
+
+<div class="menu-section">
+<h3 class="menu-title">Teák</h3>
+
+<div class="menu-item"><span>Gyümölcstea (0,3l)</span><span class="menu-price">900 Ft</span></div>
+</div>
+
+
+<!-- KÁVÉK -->
+
+<div class="menu-section">
+<h3 class="menu-title">Kávék</h3>
+
+<div class="menu-item"><span>Espresso</span><span class="menu-price">800 Ft</span></div>
+<div class="menu-item"><span>Americano</span><span class="menu-price">800 Ft</span></div>
+<div class="menu-item"><span>Espresso vagy Americano vanília fagyival</span><span class="menu-price">1500 Ft</span></div>
+<div class="menu-item"><span>Cappuccino</span><span class="menu-price">1200 Ft</span></div>
+
+</div>
+
+
+<!-- SÖRÖK -->
+
+<div class="menu-section">
+<h3 class="menu-title">Sörök</h3>
+
+<div class="menu-item"><span>Majdnem Pils (alkoholmentes) (0,5l)</span><span class="menu-price">1500 Ft</span></div>
+<div class="menu-item"><span>Gluteno meggy (0,3l)</span><span class="menu-price">1600 Ft</span></div>
+<div class="menu-item"><span>Hathárom (0,5l)</span><span class="menu-price">1500 Ft</span></div>
+<div class="menu-item"><span>Laza moral (0,3l)</span><span class="menu-price">1500 Ft</span></div>
+<div class="menu-item"><span>Málnás búza (0,3l)</span><span class="menu-price">1600 Ft</span></div>
+<div class="menu-item"><span>Szilvás (0,5l)</span><span class="menu-price">1600 Ft</span></div>
+<div class="menu-item"><span>Ogre (0,5l)</span><span class="menu-price">1600 Ft</span></div>
+<div class="menu-item"><span>Körtés búza (0,5l)</span><span class="menu-price">1600 Ft</span></div>
+<div class="menu-item"><span>Barackos (0,3l)</span><span class="menu-price">1600 Ft</span></div>
+<div class="menu-item"><span>Glankrone (0,5l)</span><span class="menu-price">950 Ft</span></div>
+<div class="menu-item"><span>Citromos Gösser 0% (0,5l)</span><span class="menu-price">850 Ft</span></div>
+<div class="menu-item"><span>Csapolt Ogre korsó (0,5l)</span><span class="menu-price">1800 Ft</span></div>
+<div class="menu-item"><span>Csapolt Meggy korsó (0,5l)</span><span class="menu-price">1900 Ft</span></div>
+<div class="menu-item"><span>Csapolt Ogre pohár (0,3l)</span><span class="menu-price">1500 Ft</span></div>
+<div class="menu-item"><span>Csapolt Meggy pohár (0,3l)</span><span class="menu-price">1600 Ft</span></div>
+
+</div>
+
+
+<!-- BOROK -->
+
+<div class="menu-section">
+<h3 class="menu-title">Borok</h3>
+
+<div class="menu-item"><span>Nyakas Irsai 2025 (1 dl)</span><span class="menu-price">500 Ft</span></div>
+<div class="menu-item"><span>Nyakas Rosé 2025 (1 dl)</span><span class="menu-price">500 Ft</span></div>
+<div class="menu-item"><span>Szóda (1 dl)</span><span class="menu-price">150 Ft</span></div>
+
+</div>
+
+<div class="menu-note mb-5">
+Áraink forintban értendőek és az ÁFÁ-t tartalmazzák, 2026.03.05-től érvényesek!<br>
+Az árváltoztatás jogát fenntartjuk!<br>
+Palackos és üveges termékeinkre +50 Ft betétdíjat számolunk fel!
+</div>
+
+<hr class="my-5">
+
+
+<h2 class="text-center mb-5">BRINGOSZ Étlap</h2>
+
+
+<!-- LÁNGOS -->
+
+<div class="menu-section">
+
+<h3 class="menu-title">Lángos</h3>
+
+<div class="menu-item"><span>Sima lángos (2 db közepes)</span><span class="menu-price">900 Ft/adag</span></div>
+<div class="menu-item"><span>Fokhagyma</span><span class="menu-price">300 Ft/db</span></div>
+<div class="menu-item"><span>Erős paprika</span><span class="menu-price">300 Ft/db</span></div>
+<div class="menu-item"><span>Tejföl</span><span class="menu-price">300 Ft/db</span></div>
+<div class="menu-item"><span>Sajt / trapista</span><span class="menu-price">300 Ft/db</span></div>
+<div class="menu-item"><span>Snidling</span><span class="menu-price">300 Ft/db</span></div>
+<div class="menu-item"><span>Füstölt sajt</span><span class="menu-price">500 Ft/db</span></div>
+<div class="menu-item"><span>Kolbász</span><span class="menu-price">500 Ft/db</span></div>
+<div class="menu-item"><span>Sonka</span><span class="menu-price">500 Ft/db</span></div>
+<div class="menu-item"><span>Nutella</span><span class="menu-price">500 Ft/db</span></div>
+<div class="menu-item"><span>Lekvár (eper / sárgabarack)</span><span class="menu-price">500 Ft/db</span></div>
+
+</div>
+
+
+<!-- PANINI -->
+
+<div class="menu-section">
+
+<h3 class="menu-title">Panini</h3>
+
+<div class="menu-item"><span>Sonkás-sajtos</span><span class="menu-price">1800 Ft/db</span></div>
+<div class="menu-item"><span>Görög csirkés</span><span class="menu-price">1800 Ft/db</span></div>
+<div class="menu-item"><span>Tépett malachúsos</span><span class="menu-price">1800 Ft/db</span></div>
+
+</div>
+
+
+<!-- BURGEREK -->
+
+<div class="menu-section">
+
+<h3 class="menu-title">Bringosz Burgerek</h3>
+
+<div class="menu-item">
+  <span>Sima<br><small class="menu-item-desc">100% marhahús, saláta, ubi, hagyma, szósz</small></span>
+  <span class="menu-price">2000 Ft/db</span>
+</div>
+<div class="menu-item">
+  <span>Sajtos<br><small class="menu-item-desc">100% marhahús, saláta, ubi, hagyma, szósz, sajt</small></span>
+  <span class="menu-price">2500 Ft/db</span>
+</div>
+<div class="menu-item">
+  <span>Speciál<br><small class="menu-item-desc">100% marhahús, saláta, ubi, hagyma, szósz, sajt, érlelt sonka</small></span>
+  <span class="menu-price">3000 Ft/db</span>
+</div>
+
+</div>
+
+
+<!-- LEVES -->
+
+<div class="menu-section">
+
+<h3 class="menu-title">Leves</h3>
+
+<div class="menu-item"><span>Napi ajánlatunkat kérdezd a kollégától!</span><span class="menu-price"></span></div>
+
+</div>
+
+
+<!-- HOTDOG -->
+
+<div class="menu-section">
+
+<h3 class="menu-title">Bringosz-Dog</h3>
+
+<div class="menu-item"><span>Klasszikus</span><span class="menu-price">1600 Ft/db</span></div>
+<div class="menu-item"><span>Pirított hagymás</span><span class="menu-price">1800 Ft/db</span></div>
+
+</div>
+
+
+<!-- EGYEBEK -->
+
+<div class="menu-section">
+
+<h3 class="menu-title">Egyebek</h3>
+
+<div class="menu-item"><span>Sült édes hasáb</span><span class="menu-price">1200 Ft/adag</span></div>
+<div class="menu-item"><span>Steak hasáb</span><span class="menu-price">1200 Ft/adag</span></div>
+<div class="menu-item"><span>Sült hasáb</span><span class="menu-price">1000 Ft/adag</span></div>
+<div class="menu-item"><span>Hagymakarika</span><span class="menu-price">1000 Ft/adag</span></div>
+
+</div>
+
+
+<!-- HÉJÁBAN SÜLT BURGONYA -->
+
+<div class="menu-section">
+
+<h3 class="menu-title">Héjában sült egész burgonya</h3>
+
+<div class="menu-item"><span>Sajtos tejfölös</span><span class="menu-price">2000 Ft/adag</span></div>
+<div class="menu-item"><span>Sonkás tejfölös</span><span class="menu-price">2500 Ft/adag</span></div>
+<div class="menu-item"><span>Lazacos tejfölös</span><span class="menu-price">3000 Ft/adag</span></div>
+
+</div>
+
+
+<!-- RÉTES -->
+
+<div class="menu-section">
+
+<h3 class="menu-title">Rétes</h3>
+
+<div class="menu-item"><span>Almás, mákos, meggyes, túrós</span><span class="menu-price">1000 Ft/db</span></div>
+<div class="menu-item"><span>Rétes vanília fagyival</span><span class="menu-price">1300 Ft/db</span></div>
+
+</div>
+
+
+<!-- SPONSER -->
+
+<div class="menu-section">
+
+<h3 class="menu-title">Sponser</h3>
+
+<div class="menu-item"><span>Amino, Magnézium</span><span class="menu-price">2000 Ft/db</span></div>
+<div class="menu-item"><span>Liquid energy 35g</span><span class="menu-price">2000 Ft/db</span></div>
+<div class="menu-item"><span>Liquid energy 70g</span><span class="menu-price">3000 Ft/db</span></div>
+<div class="menu-item"><span>Electrolytes pezsgő tabl.</span><span class="menu-price">400 Ft/db</span></div>
+<div class="menu-item"><span>Electrolytes pezsgő tabl. (csomag)</span><span class="menu-price">3000 Ft/db</span></div>
+
+</div>
+
+
+<!-- CSOKI, MÜZLI SZELET -->
+
+<div class="menu-section">
+
+<h3 class="menu-title">Csoki, müzli szelet</h3>
+
+<div class="menu-item"><span>Snickers, Twix, Mars, Bounty</span><span class="menu-price">600 Ft/db</span></div>
+<div class="menu-item"><span>Cerbona müzli szelet<br><small class="menu-item-desc">csokis-málnás, piros gyümölcsös, csokis-kekszes</small></span><span class="menu-price">500 Ft/db</span></div>
+
+</div>
+
+
+<!-- GYÜMÖLCS -->
+
+<div class="menu-section">
+
+<h3 class="menu-title">Gyümölcs</h3>
+
+<div class="menu-item"><span>Alma</span><span class="menu-price">400 Ft/db</span></div>
+<div class="menu-item"><span>Banán</span><span class="menu-price">600 Ft/db</span></div>
+<div class="menu-item"><span>Dinnyés gyümi pohár (szezonális)</span><span class="menu-price">1800 Ft/pohár</span></div>
+<div class="menu-item"><span>Power gums (cola, lime)</span><span class="menu-price">3000 Ft/csomag</span></div>
+<div class="menu-item"><span>Só tabletta</span><span class="menu-price">100 Ft/db</span></div>
+
+</div>
+
+
+<div class="menu-note">
+Áraink forintban értendőek és az ÁFÁ-t tartalmazzák, 2026.03.05-től érvényesek!<br>
+Az árváltoztatás jogát fenntartjuk!<br><br>
+Ételeink allergén anyagokat tartalmaznak, kérünk, további információval kapcsolatban kérdezd kollégánkat!<br>
+Elviteli szándékod kérlek, előre jelezd!
+</div>
+
+</div>
+</section>
+
+</main>
+
+<footer>
+© 2026 BRINGOSZ Kerékpárműhely
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -33,6 +33,7 @@
       <ul class="navbar-nav">
         <li class="nav-item"><a class="nav-link" href="index.html#berles">Bérlés</a></li>
         <li class="nav-item"><a class="nav-link" href="araink.html">Szerviz</a></li>
+        <li class="nav-item"><a class="nav-link" href="bufe.html">Büfé</a></li>
         <li class="nav-item"><a class="nav-link" href="galeria.php">Galéria</a></li>
         <li class="nav-item"><a class="nav-link" href="index.html#kapcsolat">Kapcsolat</a></li>
       </ul>
