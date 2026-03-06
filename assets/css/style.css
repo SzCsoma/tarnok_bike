@@ -218,7 +218,7 @@ section h2 {
   padding:1rem;
 }
 
-#price-tag {
+.price-tag {
   background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
   color:white;
   font-weight:700;
