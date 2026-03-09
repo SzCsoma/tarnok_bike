@@ -297,11 +297,10 @@ section h2 {
 }
 
 .contact-card{
-  height:200px;
+  height:100%;
   display:flex;
   flex-direction:column;
   justify-content:center;
-  align-items:center;
   text-align:center;
 }
 
