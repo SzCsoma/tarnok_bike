@@ -47,12 +47,11 @@ body {
 
 .nav-link {
   color: white !important;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   font-size: .85rem;
   letter-spacing: 1px;
   position: relative;
-  transition: color 0.3s ease-in-out;
 }
 
 .nav-link:hover {
@@ -72,7 +71,6 @@ body {
 
 .nav-link:hover::after {
   width: calc(100% - 2rem);
-  background: white;
 }
 
 .navbar-toggler {
@@ -86,12 +84,14 @@ body {
 /* ── HERO ── */
 .hero {
   position: relative;
-  min-height: 70vh;
+  min-height: 95vh;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  background: url("../imgs/bringosz_bg.JPG") no-repeat center center;
+  margin-top:70px;
+
+  background: url("../imgs/bringosz_bg.PNG") no-repeat left center;
   background-size: cover;
   background-color: #000;
 
@@ -99,18 +99,57 @@ body {
   text-align: center;
 }
 
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(0,0,0,0.5) 0%,
-    rgba(0,0,0,0.35) 40%,
-    rgba(0,0,0,0.7) 100%
-  );
-  z-index: 1;
+.hero-bufe::before{
+content:"";
+position:absolute;
+inset:0;
+background:linear-gradient(
+to bottom,
+rgba(0,0,0,.35),
+rgba(0,0,0,.15),
+rgba(0,0,0,.45)
+);
 }
+
+.hero-bufe{
+height:45vh;
+background:url("../imgs/bringosz_bufe.PNG") no-repeat center center;
+background-size:cover;
+margin-top:70px;
+position:relative;
+font-weight: 800;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.hero-bufe::before{
+content:"";
+position:absolute;
+inset:0;
+background:linear-gradient(
+to bottom,
+rgba(0,0,0,.55),
+rgba(0,0,0,.25),
+rgba(0,0,0,.55)
+);
+}
+
+.hero-bufe h1{
+font-size:3.4rem;
+font-weight:900;
+letter-spacing:1px;
+text-shadow:0 4px 15px rgba(0,0,0,1);
+}
+
+.hero-bufe-overlay{
+background:rgba(0,0,0,0.45);
+padding:30px 50px;
+border-radius:10px;
+color:white;
+font-weight:800;
+}
+
 
 .hero .container { position: relative; z-index: 2; }
 
@@ -118,6 +157,80 @@ body {
   font-weight: 900;
   color: #fff;
   text-shadow: 0 2px 14px rgba(0,0,0,0.6);
+}
+
+.hero-szerviz{
+height:45vh;
+background:url("../imgs/bringosz_szerviz.PNG") no-repeat center center;
+background-size:cover;
+margin-top:70px;
+position:relative;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+text-align:center;
+}
+
+.hero-szerviz::before{
+content:"";
+position:absolute;
+inset:0;
+background:linear-gradient(
+to bottom,
+rgba(0,0,0,.35),
+rgba(0,0,0,.15),
+rgba(0,0,0,.45)
+);
+}
+
+.hero-szerviz h1{
+position:relative;
+z-index:2;
+font-size:3rem;
+font-weight:800;
+text-shadow:0 4px 12px rgba(0,0,0,.7);
+}
+
+.hero-berles{
+height:45vh;
+background:url("../imgs/bringosz_berles.jpeg") no-repeat center center;
+background-size:cover;
+margin-top:70px;
+position:relative;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+text-align:center;
+}
+
+.hero-berles::before{
+content:"";
+position:absolute;
+inset:0;
+background:linear-gradient(
+to bottom,
+rgba(0,0,0,.35),
+rgba(0,0,0,.15),
+rgba(0,0,0,.45)
+);
+}
+
+.hero-berles h1{
+position:relative;
+z-index:2;
+font-size:3rem;
+font-weight:800;
+text-shadow:0 4px 12px rgba(0,0,0,.7);
+}
+
+.hero-berles p{
+position:relative;
+z-index:2;
+font-size:1.2rem;
+margin-top:10px;
+opacity:.9;
 }
 
 .hero p.lead {
@@ -183,6 +296,15 @@ section h2 {
   transition:.3s;
 }
 
+.contact-card{
+  height:200px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
 .card-img-top { height:220px; object-fit:cover; }
 
 .card-title {
@@ -192,14 +314,15 @@ section h2 {
 
 .table td { padding:1rem; }
 
-#price-tag {
+.price-tag {
   background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-  color:white;
-  font-weight:700;
-  padding:.6rem 1.2rem;
-  border-radius:8px;
-  text-align:center;
-  box-shadow: 0 3px 10px rgba(65,105,225,.25);
+  color: #fff !important;
+  font-weight: 800;
+  padding: .6rem 1.2rem;
+  border-radius: 8px;
+  text-align: center;
+  min-width: 110px;
+  box-shadow: 0 3px 10px rgba(0,0,0,.15);
 }
 
 .btn-primary {
@@ -258,7 +381,7 @@ footer {
   .content-card table { font-size: .9rem; }
   .table td { padding: .6rem; }
   .content-card { overflow-x: auto; }
-  #price-tag { font-size: .95rem; padding: .5rem .9rem; }
+  .price-tag { font-size: .95rem; padding: .5rem .9rem; }
 
   .btn { width: 100%; margin-bottom: .5rem; }
   .gallery-box { width: 100%; aspect-ratio: 1 / 1; overflow: hidden; border-radius: 12px; }
