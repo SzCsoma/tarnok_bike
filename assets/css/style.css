@@ -315,12 +315,11 @@ section h2 {
 
 .price-tag {
   background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-  color: #fff !important;
-  font-weight: 800;
-  padding: .6rem 1.2rem;
+  color: white !important;
+  font-weight: 700;
+  padding: .5rem 1rem;
   border-radius: 8px;
   text-align: center;
-  min-width: 110px;
   box-shadow: 0 3px 10px rgba(0,0,0,.15);
 }
 
