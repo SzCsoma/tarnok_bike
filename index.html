@@ -1,373 +1,111 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BRINGOSZ Kerékpárműhely – Pázmánd</title>
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./assets/css/style.css">
-
-<style>
-/* ── Táblázat upgrade ── */
-.content-card {
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 2px 12px rgba(0,0,0,.08);
-  margin-bottom: 32px;
-}
-.table { margin-bottom: 0; }
-.table thead.table-dark th {
-  font-weight: 700;
-  font-size: .85rem;
-  letter-spacing: .5px;
-  text-transform: uppercase;
-  padding: 14px 16px;
-}
-.table thead.table-dark th small {
-  display: block;
-  font-weight: 400;
-  font-size: .75rem;
-  opacity: .7;
-  letter-spacing: 0;
-  text-transform: none;
-}
-.table tbody td {
-  padding: 13px 16px;
-  vertical-align: middle;
-  font-size: .95rem;
-}
-.table tbody td:first-child { font-weight: 600; }
-.table tbody td small { display: block; color: #999; font-weight: 400; font-size: .8rem; }
-.table tbody tr:hover { background: #fff5f5; }
-.price-col {
-  font-weight: 700;
-  color: var(--primary-color);
-  font-size: 1rem;
-}
-
-/* ── Foglalás sáv ── */
-.booking-note {
-  background: var(--primary-color);
-  color: #fff;
-  border-radius: 8px;
-  padding: 16px 24px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 24px;
-  font-weight: 600;
-}
-.booking-note a {
-  color: #fff;
-  font-size: 1.1rem;
-  font-weight: 800;
-  text-decoration: none;
-}
-.booking-note a:hover { text-decoration: underline; }
-
-@media (max-width: 576px) {
-  .booking-note { justify-content: center; text-align: center; }
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Bike Tours Budapest - Kerékpáros Túrák és Szerviz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
-<nav class="navbar navbar-expand-lg fixed-top">
-  <div class="container">
-    <a class="navbar-brand" href="#">BRINGOSZ</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Menü">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse justify-content-end" id="nav">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="#berles">Bérlés</a></li>
-        <li class="nav-item"><a class="nav-link" href="araink.html">Szerviz</a></li>
-        <li class="nav-item"><a class="nav-link" href="bufe.html">Büfé</a></li>
-        <li class="nav-item"><a class="nav-link" href="galeria.php">Galéria</a></li>
-        <li class="nav-item"><a class="nav-link" href="#kapcsolat">Kapcsolat</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<main>
-<section class="hero">
-  <div class="container">
-    <strong><h1>BRINGOSZ Kerékpárműhely</h1></strong>
-    <strong><p class="lead">Kerékpárbérlés • Szerviz • Értékesítés</p></strong>
-    <div class="d-flex justify-content-center flex-wrap mt-4">
-      <a href="#kapcsolat" class="btn btn-lg">Kapcsolat</a>
-      <a href="#berles" class="btn btn-lg">Bérlés árak</a>
-    </div>
-  </div>
-</section>
-
-<section class="py-5 bg-light">
-  <div class="container">
-    <h2 class="text-center mb-5">Rólunk</h2>
-
-    <div class="row justify-content-center">
-      <div class="col-lg-9">
-        <p class="lead fw-semibold">
-          Az ötlet adott volt, mivel saját magunk is sokat kerékpározunk és állítjuk,
-          hogy a kerékpár az egyik legegyszerűbb közlekedési forma, amely egyben
-          az egyik legegészségesebb kikapcsolódási lehetőség az egész család számára.
-        </p>
-
-        <p>
-          Cégünk folyamatosan bővül: kezdetben kerékpárbérléssel és túrák szervezésével
-          foglalkoztunk Budapesten 2009 óta. Később szervizt és boltot nyitottunk,
-          majd THULE boxok bérbeadásával és értékesítésével bővítettük
-          szolgáltatásainkat.
-        </p>
-
-        <p>
-          Testvércégünk 2015-ben indította el első balatoni kerékpárkölcsönző
-          szolgáltatását Badacsonyban, a Badacsony ABC mellett, ahol a bérbeadás
-          mellett gyors („rapid") szervizzel is segíti a bajba jutott kerékpárosokat.
-        </p>
-
-        <p>
-          A Tárnoki Kerékpárműhely 2016-ban kezdte meg működését, majd 2024-ben
-          megnyitottuk második vidéki üzletünket Pázmándon. Itt családias
-          környezetben várjuk vendégeinket a BRINGOSZ Kerékpárműhely & Büfé
-          falai között profi szervizzel, kerékpárbolttal és finom falatokkal.
-        </p>
-              <img src="./assets/imgs/bringosz_logo_feher.png" alt="BRINGOSZ Logo" class="pazmand-logo">
-        <hr class="my-4">
-
-        <div class="row g-4 text-center">
-          <div class="col-lg-3 col-md-6">
-            <div class="card contact-card text-white text-center p-4" style="background-color: var(--primary-color); border-radius:20px;">
-              <h5 class="mb-3">📍 Budapest</h5>
-              <p class="mb-0">
-                1052 Budapest<br>
-                Semmelweis utca 14<br>
-                <a href="tel:+36305200650" class="text-white text-decoration-none">+36 30 520 0650</a><br>
-                <a href="mailto:bolt.bbtb@gmail.com" class="text-white text-decoration-none">bolt.bbtb@gmail.com</a><br>
-                <a href="https://bbtt.hu" target="_blank" class="text-white text-decoration-none">Weboldal</a>
-              </p>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3 text-uppercase" href="index.html">BBTB</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold text-uppercase" href="index.html">Főoldal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold text-uppercase" href="turak.html">Túrák</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold text-uppercase" href="szerviz.html">Szerviz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold text-uppercase" href="kapcsolat.html">Kapcsolat</a>
+                    </li>
+                </ul>
             </div>
-          </div>
+        </div>
+    </nav>
 
-          <div class="col-lg-3 col-md-6">
-            <div class="card contact-card text-white text-center p-4" style="background-color: var(--primary-color); border-radius:20px;">
-              <h5 class="mb-3">📍 Tárnok</h5>
-              <p class="mb-0">
-                2461 Tárnok<br>
-                Rákóczi út 46/C<br>
-                <a href="tel:+36301982662" class="text-white text-decoration-none">+36 30 198 2662</a><br>
-                <a href="mailto:kerekparbolt.tarnok@gmail.com" class="text-white text-decoration-none">kerekparbolt.tarnok@gmail.com</a><br>
-                <a href="https://tarnokbike.hu" target="_blank" class="text-white text-decoration-none">Weboldal</a>
-              </p>
+    <!-- HERO SECTION -->
+    <section class="hero-section d-flex align-items-center justify-content-center text-white text-center" style="background-image: linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.55)), url('https://d2xsxph8kpxj0f.cloudfront.net/310419663032701332/Xb6QhABQdnJddLwjydhfLD/header_6ccf1d57.png'); background-size: cover; background-position: center; min-height: 100vh;">
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-3 drop-shadow">Best Bike Tours Budapest</h1>
+            <p class="fs-4 mb-0">Fedezd fel Budapestet két keréken</p>
+        </div>
+    </section>
+
+    <!-- MAIN OPTIONS SECTION -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fs-1 fw-bold mb-5">Válassz közül</h2>
+            <div class="row g-4">
+                <!-- TÚRÁK CARD -->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-lg border-0 hover-card">
+                        <div class="card-img-wrapper position-relative overflow-hidden" style="height: 250px;">
+                            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310419663032701332/Xb6QhABQdnJddLwjydhfLD/107829621_2389500631342451_7395670102086372886_n_9411205b.jpg" class="card-img-top h-100 object-fit-cover" alt="Túrák">
+                            <div class="card-overlay position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-30"></div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h3 class="card-title fs-3 fw-bold text-secondary mb-3">Túrák & Bérlés</h3>
+                            <p class="card-text text-muted mb-4">Fedezd fel a város legjobb útvonalait, vagy bérelj kerékpárt az ideális feltételek mellett</p>
+                            <a href="turak.html" class="btn btn-primary fw-bold">Tudj meg többet</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SZERVIZ CARD -->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-lg border-0 hover-card">
+                        <div class="card-img-wrapper position-relative overflow-hidden" style="height: 250px;">
+                            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310419663032701332/Xb6QhABQdnJddLwjydhfLD/107692010_293571288509390_6244455257136255083_n_7dfd8635.jpg" class="card-img-top h-100 object-fit-cover" alt="Szerviz">
+                            <div class="card-overlay position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-30"></div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h3 class="card-title fs-3 fw-bold text-secondary mb-3">Szerviz & Javítás</h3>
+                            <p class="card-text text-muted mb-4">Professzionális szerviz és javítási szolgáltatások minden típusú kerékpárhoz</p>
+                            <a href="szerviz.html" class="btn btn-primary fw-bold">Árlista megtekintése</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="card contact-card text-white text-center p-4" style="background-color: var(--primary-color); border-radius:20px;">
-              <h5 class="mb-3">📍 Pázmánd</h5>
-              <p class="mb-0">
-                2476 Pázmánd<br>
-                Széchenyi utca 6<br>
-                <a href="tel:+36302560071" class="text-white text-decoration-none">+36 30 256 0071</a><br>
-                <a href="mailto:bringosz01@gmail.com" class="text-white text-decoration-none">bringosz01@gmail.com</a><br>
-                <a href="https://bringosz.hu" target="_blank" class="text-white text-decoration-none">Weboldal</a>
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-              <div class="card contact-card text-white text-center p-4" style="background-color: var(--primary-color); border-radius:20px;">
-                <h5 class="mb-3">📍 Badacsony</h5>
-                <p class="mb-0">
-            8258 Badacsony<br>
-            Egry stny 8.<br>
-            <a href="tel:+36205670367" class="text-white text-decoration-none">+36 20 567 0367</a><br>
-            <a href="mailto:farkasfamm@gmail.com" class="text-white text-decoration-none">farkasfamm@gmail.com</a>
-          </p>
         </div>
-      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="py-5">
+        <div class="container" style="max-width: 800px;">
+            <h2 class="text-center fs-1 fw-bold mb-4">Rólunk</h2>
+            <p class="fs-5 text-muted mb-4 lh-lg">
+                A Best Bike Tours Budapest a város legmegbízhatóbb kerékpáros turizmus és szerviz szolgáltatója. 
+                Több mint 10 év tapasztalattal, professzionális csapatunkkal és magas minőségű kerékpárainkkal 
+                garantáljuk az unforgettable élményt.
+            </p>
+            <p class="fs-5 text-muted lh-lg">
+                Legyen szó szervizről, bérlésről vagy szervezett túrákról, mi gondoskodunk minden részletről, 
+                hogy te csak a kalandon gondolkodj.
+            </p>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section class="hero-berles">
-<div>
-<h1>BRINGOSZ Bérlés</h1>
-<p>Kerékpár kölcsönzés Pázmándon</p>
-</div>
-</section>
-
-<section id="berles" class="py-5">
-  <div class="container">
-    <h2 class="text-center mb-4">BÉRLÉS <br><small class="text-muted">RENTAL</small></h2>
-
-    <h4 class="mt-5">Kerékpárok / Bikes-to-rent</h4>
-    <div class="table-responsive content-card">
-      <table class="table table-bordered text-center align-middle">
-        <thead class="table-dark">
-          <tr>
-            <th>Kerékpár<br><small>Bike</small></th>
-            <th>Egész nap<br><small>All day (9–18h)</small></th>
-            <th>Fél nap<br><small>Half day (max. 5h)</small></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Felnőtt kerékpár (24"–28")<br><small>Adult bike</small></td>
-            <td class="price-col">6 000 Ft</td>
-            <td class="price-col">4 000 Ft</td>
-          </tr>
-          <tr>
-            <td>Gyerek kerékpár (20")<br><small>Junior bike</small></td>
-            <td class="price-col">4 000 Ft</td>
-            <td class="price-col">3 000 Ft</td>
-          </tr>
-          <tr>
-            <td>Tandem kerékpár<br><small>Tandem bike</small></td>
-            <td class="price-col">10 000 Ft</td>
-            <td class="price-col">7 000 Ft</td>
-          </tr>
-          <tr>
-            <td>E-Kerékpár<br><small>E-bike</small></td>
-            <td class="price-col">12 000 Ft</td>
-            <td class="price-col">10 000 Ft</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <h4 class="mt-4">Tartozékok / Accessories</h4>
-    <div class="table-responsive content-card">
-      <table class="table table-bordered text-center align-middle">
-        <thead class="table-dark">
-          <tr>
-            <th>Tartozék<br><small>Accessory</small></th>
-            <th>Bérlés díja<br><small>Fee</small></th>
-            <th>Megjegyzés<br><small>Information</small></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Telefontartó<br><small>Mobile phone holder</small></td>
-            <td class="price-col">1 500 Ft</td>
-            <td><small>alkalmanként / daily</small></td>
-          </tr>
-          <tr>
-            <td>Túratáska<br><small>Backpack</small></td>
-            <td class="price-col">1 500 Ft</td>
-            <td><small>alkalmanként / daily</small></td>
-          </tr>
-          <tr>
-            <td>Utánfutó<br><small>Trailer</small></td>
-            <td class="price-col">2 500 Ft</td>
-            <td><small>alkalmanként / daily</small></td>
-          </tr>
-          <tr>
-            <td>Gyerekülés<br><small>Kid's seat</small></td>
-            <td class="price-col">1 500 Ft</td>
-            <td><small>alkalmanként (bérléshez ingyenes) / daily (free with bike rental)</small></td>
-          </tr>
-          <tr>
-            <td>Sisak<br><small>Helmet</small></td>
-            <td class="price-col">1 500 Ft</td>
-            <td><small>alkalmanként (bérléshez ingyenes) / daily (free with bike rental)</small></td>
-          </tr>
-          <tr>
-            <td>Lakat<br><small>Lock</small></td>
-            <td class="price-col">1 500 Ft</td>
-            <td><small>alkalmanként (bérléshez ingyenes) / daily (free with bike rental)</small></td>
-          </tr>
-          <tr>
-            <td>Thule csomagtartó<br><small>Thule box</small></td>
-            <td class="price-col">4 000 Ft</td>
-            <td><small>naponta (min. 5 nap) / daily (minimum 5 days)</small></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="booking-note">
-      <span>📞 Foglalás és további információ:</span>
-      <a href="tel:+36302560071">+36 30 256 0071</a>
-    </div>
-
-  </div>
-</section>
-
-<section id="kapcsolat" class="py-5 bg-light">
-  <div class="container">
-
-    <h2 class="text-center mb-5">Kapcsolat</h2>
-
-    <div class="row g-4 justify-content-center align-items-stretch">
-
-      <div class="col-lg-3 col-md-6">
-        <div class="card contact-card text-white text-center p-4 h-100" style="background-color: var(--primary-color); border-radius:20px;">
-          <h5 class="mb-3">📍 Hol vagyunk?</h5>
-          <p class="mb-0">
-            2476 Pázmánd<br>
-            Széchenyi utca 6.<br>
-            (A tóval szemben)
-          </p>
+    <!-- FOOTER -->
+    <footer class="bg-secondary text-white py-4">
+        <div class="container text-center">
+            <p class="mb-1">© 2026 Best Bike Tours Budapest. Minden jog fenntartva.</p>
+            <p class="small opacity-75">Telefon: +36 30 5200 650 | Email: bbtbud@gmail.com</p>
         </div>
-      </div>
+    </footer>
 
-      <div class="col-lg-3 col-md-6">
-        <div class="card contact-card text-white text-center p-4 h-100" style="background-color: var(--primary-color); border-radius:20px;">
-          <h5 class="mb-3">📞 Elérhetőség</h5>
-          <p class="mb-0">
-            <a href="tel:+36302560071" class="text-white text-decoration-none">
-              +36 30 256 0071
-            </a><br>
-
-            <a href="mailto:bringosz01@gmail.com" class="text-white text-decoration-none">
-              bringosz01@gmail.com
-            </a>
-          </p>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6">
-        <div class="card contact-card text-white text-center p-4 h-100" style="background-color: var(--primary-color); border-radius:20px;">
-          <h5 class="mb-3">🕒 Nyitvatartás</h5>
-          <p class="mb-0">
-            09:00 – 18:00<br>
-            Csütörtök – Vasárnap<br>
-            Hétfő – Szerda: Zárva
-          </p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<section>
-  <iframe
-    src="https://maps.google.com/maps?q=2476%20Pázmánd,%20Széchenyi%20utca%206&t=m&z=15&output=embed"
-    width="100%"
-    height="350"
-    style="border:0; display:block;"
-    loading="lazy">
-  </iframe>
-</section>
-
-</main>
-
-<footer>
-  <div class="container text-center">
-    <p>© 2026 BRINGOSZ Kerékpárműhely</p>
-  </div>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
