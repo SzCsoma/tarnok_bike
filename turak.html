@@ -1,301 +1,332 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kerékpáros Túrák - Best Bike Tours Budapest</title>
+    <title>Bicycle Tours - Best Bike Tours Budapest</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-secondary sticky-top shadow">
         <div class="container">
-            <a class="navbar-brand fw-bold fs-3 text-uppercase" href="index.html">BBTB</a>
+            <a class="navbar-brand fw-bold fs-3 text-uppercase" href="index.html">
+                Best Bike Tours Budapest
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link fw-bold text-uppercase" href="index.html">Főoldal</a>
+                        <a class="nav-link fw-bold text-uppercase" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bold text-uppercase" href="turak.html">Túrák</a>
+                        <a class="nav-link fw-bold text-uppercase active" href="turak.html">Tours</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bold text-uppercase" href="szerviz.html">Szerviz</a>
+                        <a class="nav-link fw-bold text-uppercase" href="galeria.php">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bold text-uppercase" href="kapcsolat.html">Kapcsolat</a>
+                        <a class="nav-link fw-bold text-uppercase" href="szerviz.html">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold text-uppercase" href="kapcsolat.html">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- HERO SECTION -->
-    <section class="hero-section-small d-flex align-items-center justify-content-center text-white text-center" style="background-image: linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.45)), url('https://d2xsxph8kpxj0f.cloudfront.net/310419663032701332/Xb6QhABQdnJddLwjydhfLD/107829621_2389500631342451_7395670102086372886_n_9411205b.jpg'); background-size: cover; background-position: center; min-height: 400px;">
+    <section 
+        class="hero-section-small d-flex align-items-center justify-content-center text-white text-center bg-gradient"
+        style="min-height: 400px;">
         <div class="container">
-            <h1 class="display-4 fw-bold drop-shadow">Kerékpáros Túrák</h1>
-            <p class="fs-5 mt-2 opacity-90">Fedezd fel Budapestet két keréken</p>
+            <h1 class="display-4 fw-bold drop-shadow">Bicycle Tours</h1>
+            <p class="fs-5 mt-2 opacity-90">Discover Budapest on two wheels</p>
         </div>
     </section>
 
-    <!-- TOURS SECTION -->
+    
     <section class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center fs-1 fw-bold mb-3">Elérhető Túrák</h2>
+            <h2 class="text-center fs-1 fw-bold mb-3">Available Tours</h2>
             <p class="text-center text-muted mb-5" style="max-width: 600px; margin-left: auto; margin-right: auto;">
-                Válassz az alábbi túrák közül, vagy szervezz egy teljesen személyre szabott kalandit!
+                Choose from our selection of tours or organize a completely customized adventure!
             </p>
 
-            <!-- TOURS GRID -->
+            
             <div class="row g-4 mb-5">
-                <!-- TOUR 1 -->
+                
                 <div class="col-md-6">
                     <div class="card h-100 shadow-lg border-0 tour-card" onclick="openTourModal(1)">
-                        <div class="position-relative overflow-hidden" style="height: 250px;">
-                            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310419663032701332/Xb6QhABQdnJddLwjydhfLD/107829621_2389500631342451_7395670102086372886_n_9411205b.jpg" class="w-100 h-100 object-fit-cover" alt="Grand Budapest Tour">
-                            <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-30 tour-overlay"></div>
+                        <div class="tour-image">
+                            <img src="images/tour_cover_resize.jpg" class="w-100 h-100 object-fit-contain bg-light">
                         </div>
                         <div class="card-body text-center">
-                            <h3 class="card-title fs-4 fw-bold text-secondary mb-2">Fix Grand Budapest Sightseeing Tour</h3>
-                            <p class="card-text text-muted mb-3">A főváros legszebb látnivalóit bemutató klasszikus túra</p>
-                            <div class="row text-center mb-3 small">
-                                <div class="col-4">
-                                    <p class="text-muted mb-0">Távolság</p>
-                                    <p class="fw-bold text-primary">25 km</p>
+                            <h3 class="card-title fs-4 fw-bold text-secondary mb-2">Fix Grand Budapest Sightseeing Tour
+                            </h3>
+                            <p class="text-muted mb-3">Classic tour showcasing the city's most beautiful attractions</p>
+
+                            <div class="row text-center mb-3 small justify-content-center">
+                                <div class="col-6">
+                                    <p class="text-muted mb-0">Distance</p>
+                                    <p class="fw-bold text-primary">~25 km</p>
                                 </div>
-                                <div class="col-4">
-                                    <p class="text-muted mb-0">Nehézség</p>
-                                    <p class="fw-bold text-primary">Könnyű</p>
-                                </div>
-                                <div class="col-4">
-                                    <p class="text-muted mb-0">Időtartam</p>
-                                    <p class="fw-bold text-primary">3-4 óra</p>
+                                <div class="col-6">
+                                    <p class="text-muted mb-0">Duration</p>
+                                    <p class="fw-bold text-primary">3-3.5 hrs</p>
                                 </div>
                             </div>
-                            <button class="btn btn-primary fw-bold w-100">Részletek megtekintése</button>
+
+                            <span class="badge bg-primary fs-6 px-3 py-2">15 000 HUF</span>
+                            <button class="btn btn-primary fw-bold w-100 mt-3">View Details</button>
                         </div>
                     </div>
                 </div>
 
-                <!-- TOUR 2 -->
+               
                 <div class="col-md-6">
                     <div class="card h-100 shadow-lg border-0 tour-card" onclick="openTourModal(2)">
-                        <div class="position-relative overflow-hidden" style="height: 250px;">
-                            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310419663032701332/Xb6QhABQdnJddLwjydhfLD/107692010_293571288509390_6244455257136255083_n_7dfd8635.jpg" class="w-100 h-100 object-fit-cover" alt="E-Bike Grand Budapest Tour">
-                            <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-30 tour-overlay"></div>
-                            <span class="badge bg-success position-absolute top-2 end-2">E-Bike</span>
+                        <div class="tour-image">
+                            <img src="images/107692010_293571288509390_6244455257136255083_n.jpg"
+                                class="w-100 h-100 object-fit-contain bg-light">
+                            <span class="badge bg-success position-absolute top-0 end-0 m-2">Recommended</span>
                         </div>
                         <div class="card-body text-center">
-                            <h3 class="card-title fs-4 fw-bold text-secondary mb-2">Fix E-Bike Grand Budapest Sightseeing Tour</h3>
-                            <p class="card-text text-muted mb-3">A klasszikus túra elektromos kerékpárral - könnyebb és kényelmesebb</p>
-                            <div class="row text-center mb-3 small">
-                                <div class="col-4">
-                                    <p class="text-muted mb-0">Távolság</p>
-                                    <p class="fw-bold text-primary">25 km</p>
+                            <h3 class="fw-bold text-secondary mb-2">Sightseeing Tour +</h3>
+                            <p class="text-muted mb-3">Classic tour + bike rental until end of day + free transfer</p>
+
+                            <div class="row text-center mb-3 small justify-content-center">
+                                <div class="col-6">
+                                    <p class="text-muted mb-0">Distance</p>
+                                    <p class="fw-bold text-primary">~25 km</p>
                                 </div>
-                                <div class="col-4">
-                                    <p class="text-muted mb-0">Nehézség</p>
-                                    <p class="fw-bold text-primary">Könnyű</p>
-                                </div>
-                                <div class="col-4">
-                                    <p class="text-muted mb-0">Időtartam</p>
-                                    <p class="fw-bold text-primary">3-4 óra</p>
+                                <div class="col-6">
+                                    <p class="text-muted mb-0">Duration</p>
+                                    <p class="fw-bold text-primary">3-3.5 hrs +</p>
                                 </div>
                             </div>
-                            <button class="btn btn-primary fw-bold w-100">Részletek megtekintése</button>
+
+                            <span class="badge bg-primary fs-6 px-3 py-2">20 000 HUF</span>
+                            <button class="btn btn-primary fw-bold w-100 mt-3">View Details</button>
                         </div>
                     </div>
                 </div>
 
-                <!-- TOUR 3 -->
+               
                 <div class="col-md-6">
                     <div class="card h-100 shadow-lg border-0 tour-card" onclick="openTourModal(3)">
-                        <div class="position-relative overflow-hidden" style="height: 250px;">
-                            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310419663032701332/Xb6QhABQdnJddLwjydhfLD/107822149_709609273159979_9129000120561096367_n_5e6c5c28.jpg" class="w-100 h-100 object-fit-cover" alt="Private Tour">
-                            <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-30 tour-overlay"></div>
+                        <div class="tour-image">
+                            <img src="images/thumb_00_resize.jpg" class="w-100 h-100 object-fit-contain bg-light">
                         </div>
                         <div class="card-body text-center">
-                            <h3 class="card-title fs-4 fw-bold text-secondary mb-2">Private Tour</h3>
-                            <p class="card-text text-muted mb-3">Saját igények szerint szervezett magánúra</p>
-                            <div class="row text-center mb-3 small">
-                                <div class="col-4">
-                                    <p class="text-muted mb-0">Távolság</p>
-                                    <p class="fw-bold text-primary">Egyedi</p>
+                            <h3 class="fw-bold text-secondary mb-2">Private Tour</h3>
+                            <p class="text-muted mb-3">Customized private tour tailored to your preferences</p>
+
+                            <div class="row text-center mb-3 small justify-content-center">
+                                <div class="col-6">
+                                    <p class="text-muted mb-0">Distance</p>
+                                    <p class="fw-bold text-primary">Custom</p>
                                 </div>
-                                <div class="col-4">
-                                    <p class="text-muted mb-0">Nehézség</p>
-                                    <p class="fw-bold text-primary">Egyedi</p>
-                                </div>
-                                <div class="col-4">
-                                    <p class="text-muted mb-0">Időtartam</p>
-                                    <p class="fw-bold text-primary">Egyedi</p>
+                                <div class="col-6">
+                                    <p class="text-muted mb-0">Duration</p>
+                                    <p class="fw-bold text-primary">Custom</p>
                                 </div>
                             </div>
-                            <button class="btn btn-primary fw-bold w-100">Részletek megtekintése</button>
+
+                            <span class="badge bg-secondary fs-6 px-3 py-2">Custom Price</span>
+                            <button class="btn btn-primary fw-bold w-100 mt-3">View Details</button>
                         </div>
                     </div>
                 </div>
 
-                <!-- TOUR 4 -->
+                
                 <div class="col-md-6">
                     <div class="card h-100 shadow-lg border-0 tour-card" onclick="openTourModal(4)">
-                        <div class="position-relative overflow-hidden" style="height: 250px;">
-                            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310419663032701332/Xb6QhABQdnJddLwjydhfLD/107715822_207613657168457_8944885146072306719_n_9b40bc52.jpg" class="w-100 h-100 object-fit-cover" alt="Private E-Bike Tour">
-                            <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-30 tour-overlay"></div>
-                            <span class="badge bg-success position-absolute top-2 end-2">E-Bike</span>
+                        <div class="tour-image">
+                            <img src="images/ebike_resize.jpg" class="w-100 h-100 object-fit-contain bg-light">
+                            <span class="badge bg-success position-absolute top-0 end-0 m-2">E-Bike</span>
                         </div>
                         <div class="card-body text-center">
-                            <h3 class="card-title fs-4 fw-bold text-secondary mb-2">Private E-Bike Tour</h3>
-                            <p class="card-text text-muted mb-3">Magánúra elektromos kerékpárral - a legkényelmesebb választás</p>
-                            <div class="row text-center mb-3 small">
-                                <div class="col-4">
-                                    <p class="text-muted mb-0">Távolság</p>
-                                    <p class="fw-bold text-primary">Egyedi</p>
+                            <h3 class="fw-bold text-secondary mb-2">Fix E-Bike Grand Budapest Tour</h3>
+                            <p class="text-muted mb-3">Classic tour on electric bikes</p>
+
+                            <div class="row text-center mb-3 small justify-content-center">
+                                <div class="col-6">
+                                    <p class="text-muted mb-0">Distance</p>
+                                    <p class="fw-bold text-primary">~25 km</p>
                                 </div>
-                                <div class="col-4">
-                                    <p class="text-muted mb-0">Nehézség</p>
-                                    <p class="fw-bold text-primary">Könnyű</p>
-                                </div>
-                                <div class="col-4">
-                                    <p class="text-muted mb-0">Időtartam</p>
-                                    <p class="fw-bold text-primary">Egyedi</p>
+                                <div class="col-6">
+                                    <p class="text-muted mb-0">Duration</p>
+                                    <p class="fw-bold text-primary">3-3.5 hrs</p>
                                 </div>
                             </div>
-                            <button class="btn btn-primary fw-bold w-100">Részletek megtekintése</button>
+
+                            <span class="badge bg-success fs-6 px-3 py-2">E-Bike</span>
+                            <button class="btn btn-primary fw-bold w-100 mt-3">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-lg border-0 tour-card" onclick="openTourModal(5)">
+                        <div class="tour-image">
+                            <img src="images/ebike_01.jpg" class="w-100 h-100 object-fit-contain bg-light">
+                            <span class="badge bg-success position-absolute top-0 end-0 m-2">E-Bike</span>
+                        </div>
+                        <div class="card-body text-center">
+                            <h3 class="fw-bold text-secondary mb-2">Private E-Bike Tour</h3>
+                            <p class="text-muted mb-3">Private tour on electric bikes</p>
+
+                            <div class="row text-center mb-3 small justify-content-center">
+                                <div class="col-6">
+                                    <p class="text-muted mb-0">Distance</p>
+                                    <p class="fw-bold text-primary">Custom</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="text-muted mb-0">Duration</p>
+                                    <p class="fw-bold text-primary">Custom</p>
+                                </div>
+                            </div>
+
+                            <span class="badge bg-success fs-6 px-3 py-2">E-Bike</span>
+                            <button class="btn btn-primary fw-bold w-100 mt-3">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-lg border-0 tour-card" onclick="openTourModal(6)">
+                        <div class="tour-image">
+                            <img src="images/tour_cover_resize.jpg" class="w-100 h-100 object-fit-contain bg-light"
+                                alt="Bike Rental"
+                                onerror="this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=250&fit=crop'">
+                        </div>
+                        <div class="card-body text-center">
+                            <h3 class="card-title fs-4 fw-bold text-secondary mb-2">Bike Rental</h3>
+                            <p class="card-text text-muted mb-3">Rent a bike and explore the city at your own pace</p>
+                            <div class="row text-center mb-3 small">
+                                <div class="col-6">
+                                    <p class="text-muted mb-0">Half Day</p>
+                                    <p class="fw-bold text-primary">5,500 HUF</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="text-muted mb-0">Full Day</p>
+                                    <p class="fw-bold text-primary">7,000 HUF</p>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <span class="badge bg-primary fs-6 px-3 py-2">Available Daily</span>
+                            </div>
+                            <button class="btn btn-primary fw-bold w-100">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-lg border-0 tour-card" onclick="openTourModal(7)">
+                        <div class="tour-image">
+                            <img src="images/ebike_resize.jpg" class="w-100 h-100 object-fit-contain bg-light"
+                                alt="E-Bike Rental"
+                                onerror="this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=250&fit=crop'">
+                            <span class="badge bg-success position-absolute top-0 end-0 m-2">E-Bike</span>
+                        </div>
+                        <div class="card-body text-center">
+                            <h3 class="card-title fs-4 fw-bold text-secondary mb-2">E-Bike Rental</h3>
+                            <p class="card-text text-muted mb-3">Rent an electric bike and explore effortlessly</p>
+                            <div class="row text-center mb-3 small">
+                                <div class="col-6">
+                                    <p class="text-muted mb-0">Half Day</p>
+                                    <p class="fw-bold text-primary">12,000 HUF</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="text-muted mb-0">Full Day</p>
+                                    <p class="fw-bold text-primary">15,000 HUF</p>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <span class="badge bg-success fs-6 px-3 py-2">E-Bike</span>
+                            </div>
+                            <button class="btn btn-primary fw-bold w-100">View Details</button>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- RENTAL SECTION -->
-            <div class="mt-5 pt-5 border-top">
-                <h2 class="text-center fs-1 fw-bold mb-3">Kerékpár Bérlés</h2>
-                <p class="text-center text-muted mb-5" style="max-width: 600px; margin-left: auto; margin-right: auto;">
-                    Bérelj kerékpárt saját tempódban és fedezd fel a várost. Minden bérléshez ingyenes zár, sisak, 
-                    láthatósági mellény és bungee tartozik.
-                </p>
-
-                <div class="table-responsive">
-                    <table class="table table-hover table-striped">
-                        <thead class="table-light">
-                            <tr>
-                                <th>Kerékpár Típus</th>
-                                <th class="text-center">Fél Nap (Iroda)</th>
-                                <th class="text-center">Fél Nap (Szállítás)</th>
-                                <th class="text-center">Egész Nap (Iroda)</th>
-                                <th class="text-center">Egész Nap (Szállítás)</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="fw-bold">Normál kerékpár</td>
-                                <td class="text-center"><span class="badge bg-primary">5500 Ft</span></td>
-                                <td class="text-center"><span class="badge bg-primary">7500 Ft</span></td>
-                                <td class="text-center"><span class="badge bg-success">7000 Ft</span></td>
-                                <td class="text-center"><span class="badge bg-success">9000 Ft</span></td>
-                            </tr>
-                            <tr>
-                                <td class="fw-bold">Tandem</td>
-                                <td class="text-center"><span class="badge bg-primary">10000 Ft</span></td>
-                                <td class="text-center"><span class="badge bg-primary">12000 Ft</span></td>
-                                <td class="text-center"><span class="badge bg-success">15000 Ft</span></td>
-                                <td class="text-center"><span class="badge bg-success">17000 Ft</span></td>
-                            </tr>
-                            <tr>
-                                <td class="fw-bold">E-bike</td>
-                                <td class="text-center"><span class="badge bg-primary">12000 Ft</span></td>
-                                <td class="text-center"><span class="badge bg-danger">Nincs</span></td>
-                                <td class="text-center"><span class="badge bg-success">15000 Ft</span></td>
-                                <td class="text-center"><span class="badge bg-danger">Nincs</span></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="alert alert-info mt-4">
-                    <strong>Nyitvatartás:</strong> Január - December: Minden nap az irodában<br>
-                    <small>Ingyenes szállítás Budapesten belül! Foglaláshoz vedd fel velünk a kapcsolatot.</small>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACT CTA -->
-    <section class="py-5 bg-white">
-        <div class="container text-center">
-            <h2 class="fs-1 fw-bold mb-4">Szeretnél foglalni?</h2>
-            <p class="text-muted mb-4" style="max-width: 600px; margin-left: auto; margin-right: auto;">
-                Vedd fel velünk a kapcsolatot az alábbi elérhetőségeken, vagy töltsd ki az üzenetformát!
-            </p>
-            <div class="d-flex flex-wrap gap-3 justify-content-center">
-                <a href="tel:+36305200650" class="btn btn-primary fw-bold px-4">📞 +36 30 5200 650</a>
-                <a href="mailto:bbtbud@gmail.com" class="btn btn-secondary fw-bold px-4">📧 bbtbud@gmail.com</a>
-                <a href="kapcsolat.html" class="btn btn-success fw-bold px-4">💬 Üzenet küldése</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- TOUR MODAL -->
-    <div class="modal fade" id="tourModal" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title fw-bold" id="tourTitle"></h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <img id="tourImage" src="" alt="Tour" class="w-100 rounded mb-3" style="max-height: 300px; object-fit: cover;">
-                    
-                    <div class="row text-center mb-3">
-                        <div class="col-3">
-                            <p class="text-muted small mb-0">Távolság</p>
-                            <p class="fw-bold text-primary" id="tourDistance"></p>
+           
+            <div class="modal fade" id="tourModal" tabindex="-1">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header bg-secondary text-white">
+                            <h5 class="modal-title fw-bold" id="tourTitle">Tour Title</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                         </div>
-                        <div class="col-3">
-                            <p class="text-muted small mb-0">Nehézség</p>
-                            <p class="fw-bold text-primary" id="tourDifficulty"></p>
+                        <div class="modal-body">
+                            <img id="tourImage" src="" class="w-100 rounded mb-3" alt="Tour Image"
+                                style="max-height: 300px; object-fit: cover;">
+
+                            <div class="row mb-3">
+                                <div class="col-md-3 text-center">
+                                    <p class="text-muted small">Distance</p>
+                                    <p class="fw-bold" id="tourDistance">-</p>
+                                </div>
+                                <div class="col-md-3 text-center">
+                                    <p class="text-muted small">Duration</p>
+                                    <p class="fw-bold" id="tourDuration">-</p>
+                                </div>
+                                <div class="col-md-3 text-center">
+                                    <p class="text-muted small">Price</p>
+                                    <p class="fw-bold text-primary" id="tourPrice">-</p>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <h6 class="fw-bold mb-2">Description</h6>
+                            <p class="text-muted mb-3" id="tourDescription">-</p>
+
+                            <div id="tourSchedule"></div>
+
+                            <h6 class="fw-bold mb-2">Highlights</h6>
+                            <div id="tourHighlights"></div>
+                            <div id="tourHighlightsIfTime"></div>
+
+                            <div id="tourNotes"></div>
+
+                            <h6 class="fw-bold mb-2 mt-4">Location</h6>
+                            <div class="rounded overflow-hidden" style="height: 250px;">
+                                <iframe id="tourMap" width="100%" height="100%" style="border: 0;" allowfullscreen=""
+                                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
                         </div>
-                        <div class="col-3">
-                            <p class="text-muted small mb-0">Időtartam</p>
-                            <p class="fw-bold text-primary" id="tourDuration"></p>
-                        </div>
-                        <div class="col-3">
-                            <p class="text-muted small mb-0">Ár</p>
-                            <p class="fw-bold text-success" id="tourPrice"></p>
+                        <div class="modal-footer">
+                            <a href="kapcsolat.html" class="btn btn-primary fw-bold">Book Now</a>
+                            <button type="button" class="btn btn-secondary fw-bold"
+                                data-bs-dismiss="modal">Close</button>
                         </div>
                     </div>
-
-                    <h6 class="fw-bold mt-4 mb-2">Leírás</h6>
-                    <p id="tourDescription" class="text-muted"></p>
-
-                    <h6 class="fw-bold mt-4 mb-2">Látnivalók</h6>
-                    <div id="tourHighlights" class="mb-4"></div>
-
-                    <h6 class="fw-bold mt-4 mb-2">Útvonal Térképe</h6>
-                    <iframe id="tourMap" width="100%" height="300" style="border: 0; border-radius: 12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="modal-footer">
-                    <a href="tel:+36305200650" class="btn btn-primary fw-bold">Hívj fel</a>
-                    <a href="kapcsolat.html" class="btn btn-secondary fw-bold">Üzenet küldése</a>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- FOOTER -->
+    
     <footer class="bg-secondary text-white py-4">
         <div class="container text-center">
-            <p class="mb-1">© 2026 Best Bike Tours Budapest. Minden jog fenntartva.</p>
-            <p class="small opacity-75">Telefon: +36 30 5200 650 | Email: bbtbud@gmail.com</p>
+            <p class="mb-1">© 2026 Best Bike Tours Budapest. All rights reserved.</p>
+            <p class="small opacity-75">Phone: +36 30 5200 650 | Email: bbtbud@gmail.com</p>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/tours.js"></script>
 </body>
+
 </html>

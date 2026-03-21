@@ -1,58 +1,223 @@
-// Tours Data
 const toursData = [
     {
         id: 1,
         title: 'Fix Grand Budapest Sightseeing Tour',
-        distance: '25 km',
-        difficulty: 'Könnyű',
-        duration: '3-4 óra',
-        price: 'Egyedi ár',
-        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310419663032701332/Xb6QhABQdnJddLwjydhfLD/107829621_2389500631342451_7395670102086372886_n_9411205b.jpg',
-        description: 'Fedezd fel a város legjobb útvonalait, vagy bérelj kerékpárt az ideális feltételek mellett',
-        fullDescription: 'Fedezd fel Budapest legikonikusabb helyeit egy 25 km-es kerékpáros túrán. Az útvonal a Duna-korzón kezdődik, majd a Lánchídon keresztül a Budai Vár felé vezetünk. Végigmegyünk a Margit-szigeten, a Parlamentnél, a Szabadság térről az Andrássy útig, meglátogatjuk az Operaházat és a Terrort Házat, végül a Hősök terét.',
-        highlights: ['Duna-korzó', 'Lánchíd', 'Budai Vár', 'Margit-sziget', 'Parlament', 'Andrássy út', 'Operaház', 'Hősök tere'],
-        mapEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2696.7661462387347!2d19.04!3d47.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dc3d6e3e5555%3A0x1234567890abcdef!2sBudapest!5e0!3m2!1shu!2shu!4v1234567890'
+        price: '15 000 HUF',
+        distance: '~25 km',
+        duration: '3-3.5 hrs',
+        image: 'images/thumb_00_resize.jpg',
+        description: 'Classic tour showcasing the city\'s most beautiful attractions',
+        fullDescription: 'The old Hungarian song said: "Budapest, Budapest, you wonderful city!" Our goal is for every guest to experience the unique beauty of the Hungarian capital on a pleasant and relaxed bicycle tour. The tour starts from our office (1052 Budapest, Semmelweis Street 14.).',
+        schedule: {
+            spring_summer: 'April - October: Daily | Departure: 10:00 / 14:30 | Duration: 3.0-3.5 hrs',
+            autumn_winter: 'November - March: Daily | Departure: 11:00 | Duration: 2.5-3.5 hrs'
+        },
+        highlights: [
+            'Danube Promenade',
+            'Chain Bridge',
+            'Castle District',
+            'Danube Riverside - Buda Side',
+            'Margaret Bridge',
+            'Margaret Island',
+            'Danube Riverside - Pest Side',
+            'Parliament',
+            'Freedom Square',
+            'St. Stephen\'s Basilica'
+        ],
+        highlights_if_time: [
+            'Andrássy Avenue',
+            'Hungarian State Opera',
+            'House of Terror Museum',
+            'Heroes Square',
+            'Vajdahunyad Castle',
+            'Széchenyi Thermal Bath',
+            'City Zoo',
+            'Ruin Pubs Area',
+            'Synagogue'
+        ],
+        notes: 'Tours operate in all weather conditions. Please dress appropriately. Transfer must be booked 90 minutes before the tour.',
+        mapEmbed: 'https://www.google.com/maps?q=Semmelweis+utca+14+Budapest+to+Szechenyi+Lanchid+Budapest+to+Buda+Castle+Budapest+to+Margaret+Island+Budapest+to+Parliament+Budapest+to+Szent+Istvan+Bazilika+Budapest&output=embed'
     },
     {
         id: 2,
-        title: 'Fix E-Bike Grand Budapest Sightseeing Tour',
-        distance: '25 km',
-        difficulty: 'Könnyű',
-        duration: '3-4 óra',
-        price: 'Egyedi ár',
-        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310419663032701332/Xb6QhABQdnJddLwjydhfLD/107692010_293571288509390_6244455257136255083_n_7dfd8635.jpg',
-        description: 'A klasszikus túra elektromos kerékpárral - könnyebb és kényelmesebb',
-        fullDescription: 'Ugyanaz a csodálatos útvonal, mint a klasszikus Grand Budapest túra, de elektromos kerékpárral! Az e-bike segítségével még könnyebben és kényelmesebben fedezhetjük fel a város legszebb helyeit. Ideális azoknak, akik szeretnék a fáradság nélkül élvezni a kalandit.',
-        highlights: ['Duna-korzó', 'Lánchíd', 'Budai Vár', 'Margit-sziget', 'Parlament', 'Andrássy út', 'Operaház', 'Hősök tere'],
-        mapEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2696.7661462387347!2d19.04!3d47.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dc3d6e3e5555%3A0x1234567890abcdef!2sBudapest!5e0!3m2!1shu!2shu!4v1234567890'
+        title: 'Sightseeing Tour +',
+        price: '20 000 HUF',
+        distance: '~25 km',
+        duration: '3-3.5 hrs + end of day',
+        image: 'images/107692010_293571288509390_6244455257136255083_n.jpg',
+        description: 'Classic tour + bike rental until end of day + free transfer',
+        fullDescription: 'The Fix Grand Budapest Sightseeing Tour (starting from our office), PLUS you can keep the bike until the end of the day, PLUS free transfer to your accommodation.',
+        schedule: {
+            spring_summer: 'April - October: Daily | Departure: 10:00 / 14:30 | Duration: 3.0-3.5 hrs',
+            autumn_winter: 'November - March: Daily | Departure: 11:00 | Duration: 2.5-3.5 hrs'
+        },
+        highlights: [
+            'Danube Promenade',
+            'Chain Bridge',
+            'Castle District',
+            'Danube Riverside - Buda Side',
+            'Margaret Bridge',
+            'Margaret Island',
+            'Danube Riverside - Pest Side',
+            'Parliament',
+            'Freedom Square',
+            'St. Stephen\'s Basilica',
+            'Bike rental until end of day',
+            'Free transfer to accommodation'
+        ],
+        highlights_if_time: [
+            'Andrássy Avenue',
+            'Hungarian State Opera',
+            'House of Terror Museum',
+            'Heroes Square',
+            'Vajdahunyad Castle',
+            'Széchenyi Thermal Bath',
+            'City Zoo',
+            'Ruin Pubs Area',
+            'Synagogue'
+        ],
+        notes: 'Tours operate in all weather conditions. Please dress appropriately. Transfer must be booked 90 minutes before the tour.',
+        mapEmbed: 'https://www.google.com/maps?q=Semmelweis+utca+14+Budapest+to+Szechenyi+Lanchid+Budapest+to+Buda+Castle+Budapest+to+Margaret+Island+Budapest+to+Parliament+Budapest+to+Szent+Istvan+Bazilika+Budapest&output=embed'
     },
     {
         id: 3,
         title: 'Private Tour',
-        distance: 'Egyedi',
-        difficulty: 'Egyedi',
-        duration: 'Egyedi',
-        price: 'Egyedi ár',
-        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310419663032701332/Xb6QhABQdnJddLwjydhfLD/107822149_709609273159979_9129000120561096367_n_5e6c5c28.jpg',
-        description: 'Saját igények szerint szervezett magánúra',
-        fullDescription: 'Szeretnél egy teljesen személyre szabott túrát? Nincs gond! Válassz ki a város bármely részét, és mi szervezzük meg az ideális útvonalat számodra. Minimum 3 fő szükséges, és 24 órás előzetes foglalás szükséges. Ingyenes szállítás Budapesten belül!',
-        highlights: ['Teljes szabadság az útvonal kiválasztásában', 'Professzionális vezetés', 'Ingyenes szállítás', 'Csoportos kedvezmények'],
-        mapEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2696.7661462387347!2d19.04!3d47.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dc3d6e3e5555%3A0x1234567890abcdef!2sBudapest!5e0!3m2!1shu!2shu!4v1234567890'
+        price: 'Inside Budapest: 22,000 HUF | Szentendre: 38,000 HUF',
+        distance: 'Custom',
+        difficulty: 'Custom',
+        duration: 'Custom',
+        image: 'images/thumb_00_resize.jpg',
+        description: 'Customized private tour tailored to your preferences',
+        fullDescription: 'This program is up to your fantasy! Tell us your desires (what, when and where you want to go), and we will organize the ideal route for you. Free transfer within Budapest!',
+        schedule: {
+            availability: 'January - December: Anytime, 24 hours prior booking required',
+            minimum: 'Minimum 3 persons'
+        },
+        highlights: [
+            'Complete freedom in route selection',
+            'Professional guidance',
+            'Free transfer within Budapest',
+            'Group discounts available',
+            'Personalized experience'
+        ],
+        highlights_if_time: [],
+        notes: 'Minimum 3 persons required. 24 hours prior booking required. Free transfer within Budapest!',
+        mapEmbed: 'https://www.google.com/maps?q=Budapest&output=embed'
     },
     {
         id: 4,
+        title: 'Fix E-Bike Grand Budapest Sightseeing Tour',
+        price: '20 000 HUF',
+        distance: '~25 km',
+        duration: '3-3.5 hrs',
+        image: 'images/ebike_resize.jpg',
+        description: 'Classic tour on electric bikes - easier and more comfortable',
+        fullDescription: 'The same wonderful route as the classic Grand Budapest tour, but on electric bikes! With e-bikes, you can explore the city\'s most beautiful places even more easily and comfortably. Ideal for those who want to enjoy the adventure without fatigue.',
+        schedule: {
+            spring_summer: 'April - October: Daily | Departure: 10:00 / 14:30 | Duration: 3.0-3.5 hrs',
+            autumn_winter: 'November - March: Daily | Departure: 11:00 | Duration: 2.5-3.5 hrs'
+        },
+        highlights: [
+            'Danube Promenade',
+            'Chain Bridge',
+            'Castle District',
+            'Danube Riverside - Buda Side',
+            'Margaret Bridge',
+            'Margaret Island',
+            'Danube Riverside - Pest Side',
+            'Parliament',
+            'Freedom Square',
+            'St. Stephen\'s Basilica',
+            'E-bike Technology (Pedelec System)'
+        ],
+        highlights_if_time: [
+            'Andrássy Avenue',
+            'Hungarian State Opera',
+            'House of Terror Museum',
+            'Heroes Square',
+            'Vajdahunyad Castle',
+            'Széchenyi Thermal Bath',
+            'City Zoo',
+            'Ruin Pubs Area',
+            'Synagogue'
+        ],
+        notes: 'Tours operate in all weather conditions. Please dress appropriately. Transfer must be booked 90 minutes before the tour. Maximum 12 persons.',
+        mapEmbed: 'https://www.google.com/maps?q=Semmelweis+utca+14+Budapest+to+Szechenyi+Lanchid+Budapest+to+Buda+Castle+Budapest+to+Margaret+Island+Budapest+to+Parliament+Budapest+to+Szent+Istvan+Bazilika+Budapest&output=embed'
+    },
+    {
+        id: 5,
         title: 'Private E-Bike Tour',
-        distance: 'Egyedi',
-        difficulty: 'Könnyű',
-        duration: 'Egyedi',
-        price: 'Egyedi ár',
-        image: 'https://d2xsxph8kpxj0f.cloudfront.net/310419663032701332/Xb6QhABQdnJddLwjydhfLD/107715822_207613657168457_8944885146072306719_n_9b40bc52.jpg',
-        description: 'Magánúra elektromos kerékpárral - a legkényelmesebb választás',
-        fullDescription: 'Szeretnél egy teljesen személyre szabott e-bike túrát? Nincs gond! Az elektromos kerékpárok segítségével még több helyet tudsz felfedezni, anélkül hogy fáradt lennél. Minimum 3 fő szükséges, és 24 órás előzetes foglalás szükséges.',
-        highlights: ['E-bike technológia', 'Teljes szabadság az útvonal kiválasztásában', 'Professzionális vezetés', 'Csoportos kedvezmények'],
-        mapEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2696.7661462387347!2d19.04!3d47.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dc3d6e3e5555%3A0x1234567890abcdef!2sBudapest!5e0!3m2!1shu!2shu!4v1234567890'
+        price: 'Inside Budapest: 25,000 HUF | Szentendre: 42,000 HUF',
+        distance: 'Custom',
+        duration: 'Custom',
+        image: 'images/ebike_01.jpg',
+        description: 'Private tour on electric bikes - the most comfortable choice',
+        fullDescription: 'Want a completely personalized e-bike tour? No problem! With electric bikes, you can discover even more places without getting tired. Tell us your preferences, and we will organize the ideal route for you.',
+        schedule: {
+            availability: 'January - December: Anytime, 24 hours prior booking required',
+            minimum: 'Minimum 3 persons, Maximum 12 persons'
+        },
+        highlights: [
+            'E-bike Technology (Pedelec System)',
+            'Complete freedom in route selection',
+            'Professional guidance',
+            'Group discounts available',
+            'Free transfer within Budapest',
+            'Personalized experience'
+        ],
+        highlights_if_time: [],
+        notes: 'Minimum 3 persons, Maximum 12 persons required. 24 hours prior booking required. Free transfer within Budapest!',
+        mapEmbed: 'https://www.google.com/maps?q=Budapest&output=embed'
+    },
+    {
+        id: 6,
+        title: 'Bike Rental',
+        price: 'Half Day: 5,500 HUF | Full Day: 7,000 HUF',
+        distance: 'Custom',
+        duration: 'Custom',
+        image: 'images/tour_cover_resize.jpg',
+        description: 'Rent a bike and explore the city at your own pace',
+        fullDescription: 'Rent a high-quality bicycle and explore Budapest on your own terms. We provide excellent quality locks and helmets with every rental. Available daily from our office.',
+        schedule: {
+            availability: 'Every day at the office'
+        },
+        highlights: [
+            'High-quality bicycles',
+            'Free helmet and lock',
+            'Flexible rental periods',
+            'Professional advice',
+            'Explore at your own pace'
+        ],
+        highlights_if_time: [],
+        notes: 'Half day: maximum 5 hours. Full day: entire day. Available daily at our office.',
+        mapEmbed: 'https://www.google.com/maps?q=Best+Bike+Tours+Budapest&output=embed'
+    },
+    {
+        id: 7,
+        title: 'E-Bike Rental',
+        price: 'Half Day: 12,000 HUF | Full Day: 15,000 HUF',
+        distance: 'Custom',
+        duration: 'Custom',
+        image: 'images/ebike_resize.jpg',
+        description: 'Rent an electric bike and explore effortlessly',
+        fullDescription: 'Rent a high-quality electric bike and explore Budapest without effort. E-bikes make it easy to cover more distance and enjoy the city comfortably. We provide excellent quality locks and helmets with every rental.',
+        schedule: {
+            availability: 'Every day at the office'
+        },
+        highlights: [
+            'High-quality e-bikes',
+            'Free helmet and lock',
+            'Flexible rental periods',
+            'E-bike Technology (Pedelec System)',
+            'Explore effortlessly',
+            'Professional advice'
+        ],
+        highlights_if_time: [],
+        notes: 'Half day: maximum 5 hours. Full day: entire day. Available daily at our office.',
+        mapEmbed: 'https://www.google.com/maps?q=Best+Bike+Tours+Budapest&output=embed'
     }
 ];
+
 
 // Open Tour Modal
 function openTourModal(tourId) {
@@ -62,15 +227,41 @@ function openTourModal(tourId) {
     document.getElementById('tourTitle').textContent = tour.title;
     document.getElementById('tourImage').src = tour.image;
     document.getElementById('tourDistance').textContent = tour.distance;
-    document.getElementById('tourDifficulty').textContent = tour.difficulty;
     document.getElementById('tourDuration').textContent = tour.duration;
     document.getElementById('tourPrice').textContent = tour.price;
     document.getElementById('tourDescription').textContent = tour.fullDescription;
     document.getElementById('tourMap').src = tour.mapEmbed;
 
+    // Schedule
+    const scheduleContainer = document.getElementById('tourSchedule');
+    scheduleContainer.innerHTML = '';
+    if (tour.schedule) {
+        const scheduleDiv = document.createElement('div');
+        scheduleDiv.className = 'alert alert-info';
+        let scheduleHtml = '<strong>Schedule:</strong><br>';
+        if (tour.schedule.spring_summer) {
+            scheduleHtml += `🌞 ${tour.schedule.spring_summer}<br>`;
+        }
+        if (tour.schedule.autumn_winter) {
+            scheduleHtml += `❄️ ${tour.schedule.autumn_winter}`;
+        }
+        if (tour.schedule.availability) {
+            scheduleHtml += `📅 ${tour.schedule.availability}<br>`;
+        }
+        if (tour.schedule.minimum) {
+            scheduleHtml += `👥 ${tour.schedule.minimum}`;
+        }
+        scheduleDiv.innerHTML = scheduleHtml;
+        scheduleContainer.appendChild(scheduleDiv);
+    }
+
     // Highlights
     const highlightsContainer = document.getElementById('tourHighlights');
     highlightsContainer.innerHTML = '';
+    const highlightsCols = document.createElement('div');
+    highlightsCols.className = 'row';
+    const col = document.createElement('div');
+    col.className = 'col-12';
     tour.highlights.forEach(highlight => {
         const div = document.createElement('div');
         div.className = 'd-flex align-items-center gap-2 mb-2';
@@ -78,8 +269,36 @@ function openTourModal(tourId) {
             <span class="text-success fw-bold">✓</span>
             <span class="text-muted">${highlight}</span>
         `;
-        highlightsContainer.appendChild(div);
+        col.appendChild(div);
     });
+    highlightsCols.appendChild(col);
+    highlightsContainer.appendChild(highlightsCols);
+
+    // Highlights if time
+    const highlightsIfTimeContainer = document.getElementById('tourHighlightsIfTime');
+    highlightsIfTimeContainer.innerHTML = '';
+    if (tour.highlights_if_time && tour.highlights_if_time.length > 0) {
+        const h6 = document.createElement('h6');
+        h6.className = 'fw-bold mt-4 mb-2';
+        h6.textContent = 'If time permits:';
+        highlightsIfTimeContainer.appendChild(h6);
+        tour.highlights_if_time.forEach(highlight => {
+            const div = document.createElement('div');
+            div.className = 'd-flex align-items-center gap-2 mb-2';
+            div.innerHTML = `
+                <span class="text-warning fw-bold">+</span>
+                <span class="text-muted">${highlight}</span>
+            `;
+            highlightsIfTimeContainer.appendChild(div);
+        });
+    }
+
+    // Notes
+    const notesContainer = document.getElementById('tourNotes');
+    notesContainer.innerHTML = '';
+    if (tour.notes) {
+        notesContainer.innerHTML = `<div class="alert alert-warning"><small>ℹ️ ${tour.notes}</small></div>`;
+    }
 
     // Show modal
     const modal = new bootstrap.Modal(document.getElementById('tourModal'));
@@ -87,6 +306,6 @@ function openTourModal(tourId) {
 }
 
 // Initialize on page load
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     console.log('Tours page loaded');
 });

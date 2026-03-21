@@ -1,34 +1,40 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Szerviz és Javítás - Best Bike Tours Budapest</title>
+    <title>Service and Repair - Best Bike Tours Budapest</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-secondary sticky-top shadow">
         <div class="container">
-            <a class="navbar-brand fw-bold fs-3 text-uppercase" href="index.html">BBTB</a>
+            <a class="navbar-brand fw-bold fs-3 text-uppercase" href="index.html">
+                Best Bike Tours Budapest
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link fw-bold text-uppercase" href="index.html">Főoldal</a>
+                        <a class="nav-link fw-bold text-uppercase" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bold text-uppercase" href="turak.html">Túrák</a>
+                        <a class="nav-link fw-bold text-uppercase" href="turak.html">Tours</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bold text-uppercase" href="szerviz.html">Szerviz</a>
+                        <a class="nav-link fw-bold text-uppercase" href="galeria.php">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bold text-uppercase" href="kapcsolat.html">Kapcsolat</a>
+                        <a class="nav-link fw-bold text-uppercase active" href="szerviz.html">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold text-uppercase" href="kapcsolat.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -36,24 +42,73 @@
     </nav>
 
     <!-- HERO SECTION -->
-    <section class="hero-section-small d-flex align-items-center justify-content-center text-white text-center" style="background-image: linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.45)), url('https://d2xsxph8kpxj0f.cloudfront.net/310419663032701332/Xb6QhABQdnJddLwjydhfLD/107692010_293571288509390_6244455257136255083_n_7dfd8635.jpg'); background-size: cover; background-position: center; min-height: 400px;">
+    <section
+        class="hero-section-small d-flex align-items-center justify-content-center text-white text-center bg-gradient"
+        style="min-height: 400px;">
         <div class="container">
-            <h1 class="display-4 fw-bold drop-shadow">Szerviz és Javítás</h1>
+            <h1 class="display-4 fw-bold drop-shadow">Service and Repair</h1>
+            <p class="fs-5 mt-2 opacity-90">Professional bicycle service for all types</p>
         </div>
     </section>
 
     <!-- CONTENT SECTION -->
     <section class="py-5 bg-light">
         <div class="container" style="max-width: 1000px;">
+
+            <!-- IMPRESSZUM / INTRO -->
             <div class="card shadow-lg border-0 mb-4">
                 <div class="card-body">
-                    <h2 class="card-title fs-3 fw-bold text-secondary mb-3">Szerviz Árlista</h2>
-                    <p class="card-text text-muted mb-3">
-                        Az alábbiakban találod meg teljes szerviz árlista. Az árak nem tartalmazzák az alkatrészek árát. 
-                        Fenntartjuk a jogot az árak módosítására.
+
+                    <h2 class="card-title fs-3 fw-bold text-secondary mb-3">Szerviz</h2>
+
+                    <p class="text-muted mb-3 lh-lg">
+                        A Best Bike Tours Budapest kerékpárműhelye nemcsak túráink hátterét biztosítja, hanem minden
+                        bringás számára megbízható szervizpontot kínál.
                     </p>
-                    <p class="card-text small text-muted fst-italic">
-                        ⚠️ Erősen szennyezett vagy kutyaszennyezte kerékpárokat csak tisztítás után tudjuk javítani!
+
+                    <p class="text-muted mb-3 lh-lg">
+                        Számunkra a kerékpár nem csupán közlekedési eszköz, hanem szenvedély – ezért minden javítást és
+                        karbantartást ugyanazzal a gondossággal végzünk, mintha a saját bringánkról lenne szó.
+                    </p>
+
+                    <p class="text-muted mb-3 lh-lg">
+                        Műhelyünkben a városi kerékpároktól a trekking bringákon át az E-bike és mountain bike-okig
+                        minden típusról gondoskodunk.
+                    </p>
+
+                    <p class="text-muted mb-0 lh-lg">
+                        Műhelyünkben kiemelt figyelmet fordítunk a biztonságra, a minőségi alkatrészekre és a
+                        megbízhatóságra.
+                    </p>
+
+                    <p class="fw-bold text-primary mt-3 mb-0">
+                        Látogass el hozzánk bizalommal!
+                    </p>
+
+                </div>
+            </div>
+
+            <!-- PRICE LIST HEADER -->
+            <div class="card shadow-lg border-0 mb-4">
+                <div class="card-body">
+                    <h2 class="card-title fs-3 fw-bold text-secondary mb-3">Szerviz árlista</h2>
+
+                    <p class="card-text text-muted mb-3">
+                        Az alábbiakban megtalálod teljes szerviz árlistánkat. Az árak nem tartalmazzák az alkatrészek
+                        árát.
+                        Az árváltoztatás jogát fenntartjuk.
+                    </p>
+
+                    <p class="card-text text-muted mb-2">
+                        Szakképzett és tapasztalt csapatunk nemcsak javítja a kerékpárokat, hanem teljes körű
+                        karbantartási szolgáltatást is nyújt minden bringás számára.
+                    </p>
+
+                    <p class="card-text small">
+                        <span style="color:red">
+                            Erősen szennyezett vagy állati eredetű szennyeződéssel érintett kerékpárok csak tisztítás
+                            után javíthatók!
+                        </span>
                     </p>
                 </div>
             </div>
@@ -64,17 +119,19 @@
             <!-- CONTACT CTA -->
             <div class="card bg-gradient mt-5 text-white border-0">
                 <div class="card-body text-center py-5">
-                    <h3 class="card-title fs-3 fw-bold mb-3">Kérdésed van?</h3>
-                    <p class="card-text mb-4">Vedd fel velünk a kapcsolatot az alábbi elérhetőségeken:</p>
+                    <h3 class="card-title fs-3 fw-bold mb-3">Have a Question?</h3>
+                    <p class="card-text mb-4">Contact us using the information below:</p>
                     <div class="mb-4">
                         <p class="fs-5 mb-2">
-                            📞 <a href="tel:+36305200650" class="text-white text-decoration-none fw-bold">+36 30 5200 650</a>
+                            📞 <a href="tel:+36305200650" class="text-white text-decoration-none fw-bold">+36 30 5200
+                                650</a>
                         </p>
                         <p class="fs-5">
-                            📧 <a href="mailto:bbtbud@gmail.com" class="text-white text-decoration-none fw-bold">bbtbud@gmail.com</a>
+                            📧 <a href="mailto:bbtbud@gmail.com"
+                                class="text-white text-decoration-none fw-bold">bbtbud@gmail.com</a>
                         </p>
                     </div>
-                    <a href="kapcsolat.html" class="btn btn-light fw-bold">Üzenet küldése</a>
+                    <a href="kapcsolat.html" class="btn btn-light fw-bold">Send Message</a>
                 </div>
             </div>
         </div>
@@ -83,12 +140,13 @@
     <!-- FOOTER -->
     <footer class="bg-secondary text-white py-4">
         <div class="container text-center">
-            <p class="mb-1">© 2026 Best Bike Tours Budapest. Minden jog fenntartva.</p>
-            <p class="small opacity-75">Telefon: +36 30 5200 650 | Email: bbtbud@gmail.com</p>
+            <p class="mb-1">© 2026 Best Bike Tours Budapest. All rights reserved.</p>
+            <p class="small opacity-75">Phone: +36 30 5200 650 | Email: bbtbud@gmail.com</p>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/szerviz.js"></script>
 </body>
+
 </html>
